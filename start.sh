@@ -1,5 +1,5 @@
 export USER=$(whoami)
-export TPU_NAME='v4-64'
+export TPU_NAME='v4-16'
 export ZONE='us-central2-b'
 
 echo "[local] Killing TPU"
