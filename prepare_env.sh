@@ -25,3 +25,5 @@ rm ~/.local/bin/pip*
 
 pip install -q -U keras-nlp tensorflow-text
 pip install -q -U tensorflow-cpu
+pip install -U "jax[tpu]" -f https://storage.googleapis.com/jax-releases/libtpu_releases.html
+conda init
