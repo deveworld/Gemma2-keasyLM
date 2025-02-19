@@ -22,7 +22,7 @@ gcloud compute tpus tpu-vm ssh $USER@$TPU_NAME \
 
 echo "[local] Git pull"
 gcloud compute tpus tpu-vm ssh $USER@$TPU_NAME --zone $ZONE --worker=all --command \
-" sudo apt install git wget ; git clone https://github.com/deveworld/Gemma2-keasyLM/ ;\
+" sudo apt install -y git wget ; git clone https://github.com/deveworld/Gemma2-keasyLM/ ;\
 cd ~/Gemma2-keasyLM/ && git pull"
 
 echo "[local] Prepare Env"
